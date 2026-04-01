@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hud"><span class="ping">PING</span> 28ms · <span style="color:var(--muted)">FPS</span> 144</div>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo">CB</div>
+            <span class="logo-text">Clement Bourbon</span>
+        </div>
+        <div class="nav-center">
+            <a href="#about">À propos</a>
+            <a href="#education">Parcours</a>
+            <a href="#experience">Experience pro</a>
+            <a href="#projects">Projets</a>
+            <a href="#veille">Veille Techno</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-cta">CV</a>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">PORTFOLIO</h1>
+            <p class="hero-subtitle">Développeur Web & Étudiant BTS SIO</p>
+        </div>
+    </section>
+
+    <main>
+    <section id="about" class="about-section">
+        <h2>À propos de moi</h2>
+        <p>
+            Passionné par le développement web et les nouvelles technologies, je suis actuellement étudiant en BTS SIO. Je conçois des sites web modernes, performants et adaptés aux besoins des utilisateurs. Curieux et motivé, je cherche constamment à améliorer mes compétences en explorant de nouveaux langages et frameworks.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Parcours Scolaire</h2>
+        <div class="education-timeline">
+            <div class="education-item" data-year="2022-2023">
+                <div class="education-header">
+                    <span class="education-title">BAC STI2D</span>
+                    <span class="education-option">Option SIN</span>
+                    <span class="education-toggle">+</span>
+                </div>
+                <div class="education-content">
+                    <p>Diplôme : Baccalauréat Sciences et Technologies de l'Industrie et du Développement Durable</p>
+                    <p>Spécialité : Systèmes d'Information et Numérique (SIN)</p>
+                </div>
+            </div>
+            <div class="education-item" data-year="2023-2024">
+                <div class="education-header">
+                    <span class="education-title">BUT INFORMATIQUE</span>
+                    <span class="education-option">IUT LYON 1</span>
+                    <span class="education-toggle">+</span>
+                </div>
+                <div class="education-content">
+                    <p>Bachelor universitaire de technologie en Informatique</p>
+                    <p>IUT Lyon 1 - Première année du cursus</p>
+                </div>
+            </div>
+            <div class="education-item" data-year="2024-2026">
+                <div class="education-header">
+                    <span class="education-title">BTS SIO</span>
+                    <span class="education-option">Option SLAM</span>
+                    <span class="education-toggle">+</span>
+                </div>
+                <div class="education-content">
+                    <p>Brevet de Technicien Supérieur Services Informatiques aux Organisations</p>
+                    <p>Option : Solutions Logicielles et Applications Métier (SLAM)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Expérience Professionnelle</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-title">Équipier polyvalent</span>
+                    <span class="experience-company">McDonald's</span>
+                    <span class="experience-date">Septembre - Novembre 2022 (2 mois)</span>
+                </div>
+                <div class="experience-content">
+                    <p>Travail polyvalent en cuisine et accueil client.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-title">Employé libre service</span>
+                    <span class="experience-company">Leclerc</span>
+                    <span class="experience-date">Juillet - Août 2024 (2 mois)</span>
+                </div>
+                <div class="experience-content">
+                    <p>Gestion des rayons et service en magasin.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-title">Développeur Web (Stage)</span>
+                    <span class="experience-company">Sun Chauffage</span>
+                    <span class="experience-date">Mai - Début Juillet 2023 (6 semaines)</span>
+                </div>
+                <div class="experience-content">
+                    <p>Développement web et création de solutions numériques.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-title">Développeur Web (Stage)</span>
+                    <span class="experience-company">Yusha Tattoo</span>
+                    <span class="experience-date">2026 (7 semaines)</span>
+                </div>
+                <div class="experience-content">
+                    <p>Développement web et solutions informatiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Mes projets</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Portfolio Web</h3>
+                <p>Site personnel pour présenter mes compétences et réalisations.</p>
+                <a class="btn-neon" href="#">Voir le projet</a>
+            </div>
+            <div class="project-card">
+                <h3>Application ToDo</h3>
+                <p>Gestionnaire de tâches en JavaScript avec stockage local.</p>
+                <a class="btn-neon" href="#">Voir le projet</a>
+            </div>
+            <div class="project-card">
+                <h3>Site vitrine</h3>
+                <p>Création d'un site vitrine pour une association locale.</p>
+                <a class="btn-neon" href="#">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="veille">
+        <h2>Veille Technologique - React</h2>
+        <div class="veille-header">
+            <div class="veille-badge">📚 Étudiant BTS SIO - Option SLAM</div>
+            <div class="veille-type-badge active">🎯 VEILLE ACTIVE</div>
+        </div>
+        
+        <div class="veille-section">
+            <div class="veille-card">
+                <h3 class="veille-subtitle">📋 Méthodologie de Veille</h3>
+                <div class="veille-content">
+                    <p><strong>Définition :</strong> La veille technologique est un processus continu de recherche, de sélection et d'analyse d'informations sur les évolutions technologiques pour rester à jour dans son domaine.</p>
+                    
+                    <p><strong>Type de veille pratiquée : ACTIVE</strong></p>
+                    <div class="veille-info-box">
+                        <p><strong>Veille ACTIVE :</strong> Démarche volontaire et organisée où je recherche intentionnellement des informations techniques, je consulte régulièrement les sources, j'analyse les annonces et je documente mes apprentissages.</p>
+                    </div>
+                    
+                    <p><strong>Objectifs (selon programme BTS SIO) :</strong></p>
+                    <ul>
+                        <li>Maintenir et actualiser les connaissances en développement web</li>
+                        <li>Anticiper les changements technologiques et adapter mes compétences</li>
+                        <li>Optimiser les choix technologiques pour mon stage et mes projets</li>
+                        <li>Préparer mon entrée dans le monde professionnel</li>
+                    </ul>
+                    
+                    <p><strong>Processus suivi (approche structurée) :</strong></p>
+                    <ol>
+                        <li><strong>Recherche Active :</strong> Consultation volontaire et régulière de sources fiables (newsletters, documentation officielle)</li>
+                        <li><strong>Tri :</strong> Sélection critique des informations pertinentes et vérifiées</li>
+                        <li><strong>Analyse :</strong> Évaluation de l'impact sur mon formation et mes projets</li>
+                        <li><strong>Synthèse :</strong> Documentation structurée et partage (comme ici sur mon portfolio)</li>
+                        <li><strong>Application :</strong> Mise en pratique des apprentissages dans mes projets</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="veille-card">
+                <h3 class="veille-subtitle">🔗 Sources de Veille Utilisées</h3>
+                <div class="veille-content">
+                    <p><strong>Sources consultées activement (approche ACTIVE) :</strong></p>
+                    <ul class="sources-list">
+                        <li class="active-source"><strong>Documentation officielle :</strong> react.dev (guides et API React) - consultation hebdomadaire</li>
+                        <li class="active-source"><strong>Blog officiel :</strong> blog.react.dev (annonces majeures) - suivi mensuel</li>
+                        <li class="active-source"><strong>Newsletter :</strong> React Status, JavaScript Weekly - inscription et lecture régulière</li>
+                        <li class="active-source"><strong>Plateforme de code :</strong> GitHub React (discussions, issues, releases) - consultation active</li>
+                        <li class="active-source"><strong>Communauté :</strong> Stack Overflow, Reddit r/reactjs - recherche d'expériences</li>
+                        <li class="active-source"><strong>Conférences :</strong> React Conference, JS conferences (vidéos YouTube) - visionnage ciblé</li>
+                        <li class="active-source"><strong>Articles techniques :</strong> Medium, Dev.to, Smashing Magazine - lecture active des trending articles</li>
+                    </ul>
+                    <p style="color: var(--muted); font-size: 0.85rem; margin-top: 12px;">✓ <em>Toutes ces sources sont consultées de manière intentionnelle et régulière dans le cadre de ma formation BTS SIO</em></p>
+                </div>
+            </div>
+
+            <div class="veille-card">
+                <h3 class="veille-subtitle">🚀 Découvertes Clés - React 2025/2026</h3>
+                <div class="veille-content">
+                    <div class="discovery-item">
+                        <h4>React 19 & Server Components</h4>
+                        <p>Les Server Components deviennent un standard pour optimiser le rendu côté serveur et réduire le JavaScript client. Framework comme Next.js intègrent cette approche nativement.</p>
+                        <span class="impact-badge">Impact : ÉLEVÉ</span>
+                    </div>
+                    
+                    <div class="discovery-item">
+                        <h4>Hooks Avancements et use() API</h4>
+                        <p>Nouvelles fonctions comme use() simplifient la gestion des Promises et du contexte. Les hooks deviennent encore plus puissants et expressifs.</p>
+                        <span class="impact-badge">Impact : MOYEN-ÉLEVÉ</span>
+                    </div>
+                    
+                    <div class="discovery-item">
+                        <h4>Actions & Mutations Simplifiées</h4>
+                        <p>Avec React 19, les Server Actions rendent les mutations et les appels serveur plus simples, réduisant le code boilerplate pour les formulaires.</p>
+                        <span class="impact-badge">Impact : ÉLEVÉ</span>
+                    </div>
+
+                    <div class="discovery-item">
+                        <h4>Performance Optimizations</h4>
+                        <p>Amélioration continue des algorithmes de réconciliation et de rendering. Focus sur Core Web Vitals et UX performante.</p>
+                        <span class="impact-badge">Impact : MOYEN</span>
+                    </div>
+
+                    <div class="discovery-item">
+                        <h4>TypeScript par Défaut</h4>
+                        <p>Le TypeScript devient de plus en plus central dans l'écosystème React. Meilleure intégration avec les outils et les frameworks.</p>
+                        <span class="impact-badge">Impact : MOYEN-ÉLEVÉ</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="veille-card">
+                <h3 class="veille-subtitle">💡 Tendances Identifiées & Adaptation Personnelle</h3>
+                <div class="veille-content">
+                    <p><strong>Tendances identifiées via ma veille active :</strong></p>
+                    <ul>
+                        <li>Shift vers le "React without JS" - moins d'hydratation client</li>
+                        <li>Croissance de l'écosystème meta (Next.js, React Native, etc.)</li>
+                        <li>Importance croissante de l'accessibilité (A11Y) et des performances</li>
+                        <li>Consolidation autour de quelques frameworks majeurs</li>
+                        <li>AI & React : intégration croissante de LLMs dans les applications</li>
+                    </ul>
+                    
+                    <p><strong>Adaptations dans mon parcours de formation BTS SIO :</strong></p>
+                    <ul>
+                        <li>✅ Prioriser Next.js dans mes futurs projets d'apprentissage</li>
+                        <li>✅ Approfondir les hooks avancés et Context API</li>
+                        <li>✅ Intégrer les Server Components dans mes prochains développements</li>
+                        <li>✅ Mettre l'accent sur les performances et Core Web Vitals</li>
+                        <li>✅ Explorer TypeScript pour mon stage chez Yusha Tattoo (Mars 2026)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="veille-card">
+                <h3 class="veille-subtitle">📊 Calendrier de Veille Active & Suivi</h3>
+                <div class="veille-content">
+                    <p><strong>Fréquence de consultation (approche actuelle en tant qu'étudiant BTS) :</strong></p>
+                    <ul>
+                        <li><strong>Quotidienne :</strong> Vérification des issues GitHub React (10-15 min)</li>
+                        <li><strong>Hebdomadaire :</strong> Lecture React Status newsletter + articles Dev.to (30-45 min)</li>
+                        <li><strong>Mensuelle :</strong> Relecture blog officiel React + exploration nouvelles versions (1-2h)</li>
+                        <li><strong>Trimestrielle :</strong> Consultation des RFCs importantes + évaluation nouveaux outils (2-3h)</li>
+                    </ul>
+                    <p><strong>Pourquoi cette veille est importante pour mon cursus :</strong></p>
+                    <ul>
+                        <li>Enrichissement personnel au-delà du programme officiel BTS</li>
+                        <li>Préparation efficace aux évaluations pratiques et projets</li>
+                        <li>Avantage concurrentiel pour mon stage en entreprise (Yusha Tattoo 2026)</li>
+                        <li>Compétence clé du domaine de l'informatique : "S'adapter rapidement"</li>
+                    </ul>
+                    <p><strong>Prochaines actions :</strong> Appliquer React 19 & Next.js 15+ dans mon stage et mes projets de fin de formation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv">
+        <h2>Mon CV</h2>
+        <div class="cv-container">
+            <div id="cv-viewer" class="cv-image-viewer">
+                <img src="tkt.png" alt="Mon CV" class="cv-image">
+            </div>
+            <div class="cv-download" style="text-align: center;">
+                <a href="BOURBON CLEMENT (1).pdf" download class="btn-download">📥 Télécharger le CV (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            Email : <a href="mailto:clementbourbon974@gmail.com">clementbourbon974@gmail.com</a><br>
+            LinkedIn : <a href="https://www.linkedin.com/">Mon profil</a>
+        </p>
+    </section>
+    </main>
+    <footer>
+        &copy; 2025 Clement Bourbon - Portfolio
+    </footer>
+    <script>
+        // Education accordion toggle
+        document.querySelectorAll('.education-item').forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
+
+        // Stagger animations on scroll with Intersection Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.animation = entry.target.dataset.animation || 'fadeInUp .7s ease-out forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe education items for animation
+        document.querySelectorAll('.education-item').forEach((item, index) => {
+            item.style.opacity = '0';
+            item.style.animation = `fadeInUp .6s ease-out ${0.05 * index}s forwards`;
+        });
+    </script>
+</body>
+</html>
