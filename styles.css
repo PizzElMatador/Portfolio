@@ -356,6 +356,115 @@ section h2{animation:slideInLeft .6s ease-out;font-size:1.15rem;color:#fff;margi
 
 footer{text-align:center;padding:16px 0;color:var(--muted);margin-top:18px;border-top:1px solid rgba(255,255,255,0.02)}
 
+/* Réalisations Profesionnelles Section */
+.realisations-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pdf-viewer-wrapper {
+    background: linear-gradient(180deg, rgba(124,92,255,0.05), rgba(255,70,85,0.03));
+    border: 1px solid rgba(124,92,255,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(124,92,255,0.1);
+    transition: all .3s ease;
+}
+
+.pdf-viewer-wrapper:hover {
+    border-color: rgba(124,92,255,0.5);
+    box-shadow: 0 12px 40px rgba(124,92,255,0.15);
+    transform: translateY(-2px);
+}
+
+.pdf-header {
+    padding: 16px 20px;
+    background: rgba(124,92,255,0.08);
+    border-bottom: 1px solid rgba(124,92,255,0.2);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pdf-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.pdf-embed {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+}
+
+.pdf-embed iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-actions {
+    padding: 20px;
+    background: rgba(124,92,255,0.04);
+    border-top: 1px solid rgba(124,92,255,0.2);
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn-download-pdf {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: all .3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 6px 20px rgba(124,92,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.btn-download-pdf:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(124,92,255,0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-download-pdf:active {
+    transform: translateY(-1px);
+}
+
+/* Responsive design for PDF viewer */
+@media (max-width: 768px) {
+    .pdf-embed {
+        min-height: 500px;
+        padding: 12px;
+    }
+    
+    .pdf-embed iframe {
+        height: 500px !important;
+    }
+    
+    .pdf-header {
+        padding: 12px 16px;
+    }
+    
+    .pdf-title {
+        font-size: 0.95rem;
+    }
+}
+
 /* Contact links styling */
 #contact a{
     color: var(--accent);
