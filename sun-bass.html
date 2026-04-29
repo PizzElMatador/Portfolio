@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sun & Bass - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .project-detail {
+            max-width: 1140px;
+            margin: 80px auto;
+            padding: 40px;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .project-header h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+        }
+        .project-subtitle {
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .project-description h2 {
+            color: var(--accent-2);
+            margin-top: 0;
+        }
+        .project-description p {
+            color: #e6eef6;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+        .tech-stack {
+            background: rgba(124,92,255,0.05);
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid rgba(124,92,255,0.2);
+            margin: 20px 0;
+        }
+        .tech-stack h3 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tech-tag {
+            background: rgba(255,70,85,0.1);
+            border: 1px solid rgba(255,70,85,0.3);
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .features {
+            background: rgba(255,255,255,0.01);
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .features h3 {
+            color: var(--accent-2);
+            margin-top: 0;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            color: #e6eef6;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .features li:last-child {
+            border-bottom: none;
+        }
+        .features li::before {
+            content: "→ ";
+            color: var(--accent);
+            margin-right: 10px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background: rgba(124,92,255,0.1);
+            border: 1px solid rgba(124,92,255,0.3);
+            border-radius: 4px;
+            color: var(--accent-2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all .3s;
+        }
+        .back-btn:hover {
+            background: rgba(124,92,255,0.2);
+            border-color: rgba(124,92,255,0.5);
+        }
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hud"><span class="ping">PING</span> 28ms · <span style="color:var(--muted)">FPS</span> 144</div>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo">CB</div>
+            <span class="logo-text">Clement Bourbon</span>
+        </div>
+        <div class="nav-center">
+            <a href="index.html#about">À propos</a>
+            <a href="index.html#education">Parcours</a>
+            <a href="index.html#experience">Experience pro</a>
+            <a href="index.html#projects">Projets</a>
+            <a href="index.html#realisations">Réalisations</a>
+            <a href="index.html#veille">Veille Techno</a>
+            <a href="index.html#cv">CV</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-cta">CV</a>
+        </div>
+    </nav>
+
+    <main style="padding-top: 70px;">
+        <a href="index.html#projects" class="back-btn">← Retour aux projets</a>
+        
+        <div class="project-detail">
+            <div class="project-header">
+                <h1>Sun & Bass</h1>
+                <p class="project-subtitle">Plateforme de gestion de prestations et d'utilisateurs</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h2>À propos du projet</h2>
+                    <p>
+                        Sun & Bass est une application web complète développée avec <strong>Angular</strong>, permettant la gestion de prestations professionnelles et de profils utilisateurs. 
+                    </p>
+                    <p>
+                        L'application offre une interface moderne avec authentification utilisateur, tableaux de bord distincts pour les administrateurs et prestataires, et une gestion complète des prestations via une base de données SQL.
+                    </p>
+                    <p>
+                        Ce projet démontre mes compétences en développement full-stack avec architecture frontend modulaire et intégration backend.
+                    </p>
+
+                    <div class="tech-stack">
+                        <h3>Stack Technique</h3>
+                        <div class="tech-list">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">API REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features">
+                    <h3>Fonctionnalités principales</h3>
+                    <ul>
+                        <li>Système d'authentification utilisateur</li>
+                        <li>Tableaux de bord personnalisés par rôle</li>
+                        <li>Dashboard Admin</li>
+                        <li>Dashboard Prestataire</li>
+                        <li>Gestion des prestations</li>
+                        <li>Profils utilisateurs</li>
+                        <li>Architecture modulaire Angular</li>
+                        <li>Intégration API REST</li>
+                        <li>Base de données SQL</li>
+                        <li>Services métier réutilisables</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="background: rgba(255,70,85,0.05); padding: 20px; border-radius: 6px; border-left: 4px solid var(--accent); margin-top: 40px;">
+                <h3 style="color: var(--accent); margin-top: 0;">Structure du projet</h3>
+                <p style="color: #e6eef6; margin: 0;">
+                    Le projet est organisé avec une structure Angular modulaire comprenant:
+                </p>
+                <ul style="color: #e6eef6;">
+                    <li><strong>Components</strong>: Login, Register, Admin Dashboard, Prestataire Dashboard, Prestations, Profile</li>
+                    <li><strong>Services</strong>: Auth Service, Admin Service, Prestataire Service, Prestation Service</li>
+                    <li><strong>Models</strong>: User et Prestation</li>
+                    <li><strong>Base de données</strong>: Schema SQL pour la persistence des données</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
